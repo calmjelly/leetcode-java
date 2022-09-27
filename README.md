@@ -1,2 +1,2 @@
 # leetcode-java
-leetcode 刷题记录
+System.out.println("刷穿力扣!")
