@@ -6,11 +6,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @Description: 106. 从中序与后序遍历序列构造二叉树
+ * @Description: 105. 从前序与中序遍历序列构造二叉树
  * @Author: Ybl
  * @Date: 2022/10/4
  */
-public class T106 {
+public class T105 {
+
     Map<Integer, Integer> map = new HashMap<>();
 
     public TreeNode buildTree(int[] preorder, int[] inorder) {
@@ -27,7 +28,7 @@ public class T106 {
     }
 
     private TreeNode help(int[] inorder, int inStart, int inEnd, int[] preorder, int preStart, int preEnd) {
-        if (inEnd < inStart || preEnd < preStart) {
+        if (inEnd <= inStart || preEnd <= preStart) {
             return null;
         }
         TreeNode root = new TreeNode();
@@ -37,11 +38,10 @@ public class T106 {
         if (leftLen < 0) {
             return null;
         }
-        if (preStart + leftLen +1 < preorder.length) {
+        if (preStart + leftLen <= preorder.length) {
             root.left = help(inorder, inStart, index, preorder, preStart + 1, preStart + leftLen+1);
             root.right = help(inorder, index + 1, inEnd, preorder, preStart + leftLen +1, preEnd);
         }
         return root;
     }
-
 }
