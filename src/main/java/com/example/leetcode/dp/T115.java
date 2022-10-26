@@ -14,6 +14,8 @@ public class T115 {
         for (int i = 1; i <= s.length(); i++) {
             for (int j = 1; j <= t.length(); j++) {
                 if (s.charAt(i - 1) == t.charAt(j - 1)) {
+                    //相等时候，dp[i][j]由两部分组成，可以吧s/t的最后一个元素都去掉来匹配
+                    //也可以去掉s的最后一个元素，让s[:-1]来匹配t，
                     dp[i][j] = dp[i - 1][j - 1] + dp[i - 1][j];
                 } else {
                     dp[i][j] = dp[i - 1][j];
