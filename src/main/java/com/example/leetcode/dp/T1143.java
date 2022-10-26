@@ -12,6 +12,7 @@ public class T1143 {
                 if (text1.charAt(i-1) == text2.charAt(j-1)){
                     dp[i][j] = dp[i-1][j-1]+1;
                 }else {
+                    //取最大值
                     dp[i][j] = Math.max(dp[i-1][j],dp[i][j-1]);
                 }
             }
