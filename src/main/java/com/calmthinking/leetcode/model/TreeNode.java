@@ -1,4 +1,4 @@
-package com.calmthinking.leetcode.common;
+package com.calmthinking.leetcode.model;
 
 public class TreeNode {
     public int val;

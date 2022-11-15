@@ -1,6 +1,6 @@
 package com.calmthinking.leetcode.btree;
 
-import com.calmthinking.leetcode.common.TreeNode;
+import com.calmthinking.leetcode.model.TreeNode;
 
 /**
  * @Description: 二叉树的最大深度

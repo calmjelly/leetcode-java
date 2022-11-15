@@ -1,6 +1,6 @@
 package com.calmthinking.leetcode.btree;
 
-import com.calmthinking.leetcode.common.TreeNode;
+import com.calmthinking.leetcode.model.TreeNode;
 
 public class T101 {
     class Solution {

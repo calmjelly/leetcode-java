@@ -1,6 +1,6 @@
 package com.calmthinking.leetcode.btree;
 
-import com.calmthinking.leetcode.common.TreeNode;
+import com.calmthinking.leetcode.model.TreeNode;
 
 /**
  * @Description: 530. 二叉搜索树的最小绝对差
