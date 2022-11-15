@@ -9,7 +9,7 @@ public class Solution {
         T1365 t105 = new T1365();
         int[] nums1 = {2,4};
         int[] nums2 = {8,1,2,2,3};
-        System.out.println(Arrays.toString(t105.smallerNumbersThanCurrent(nums2))); ;
+//        System.out.println(Arrays.toString(t105.smallerNumbersThanCurrent(nums2))); ;
     }
 
 }
