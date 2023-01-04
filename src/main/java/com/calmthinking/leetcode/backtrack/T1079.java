@@ -1,5 +1,7 @@
 package com.calmthinking.leetcode.backtrack;
 
+import com.alibaba.fastjson.JSON;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -40,7 +42,7 @@ public class T1079 {
      * 方式2：直接输出所有结果集
      * 思路：
      * used数组记录每个位置字符是否被使用过，用于去重
-     * 每次调用dfs时候，将当前咱村的list转为字符串，加入结果集
+     * 每次调用dfs时候，将当前暂存的list转为字符串，加入结果集
      * 去重有两个地方：
      * 1、当前遍历的字符已经使用了，直接跳过
      * 2、当前遍历的字符和前一个字符相同，且前一个字符没有使用过，直接跳过（将整个结果空间展开，就是同一个分叉的垂直方向上不去重，水平方向去重）
@@ -57,6 +59,7 @@ public class T1079 {
         boolean[] used = new boolean[chars.length];
         Arrays.sort(chars);
         dfs2(result, list, chars, used);
+        JSON.toJSONString(result);
         return result.size();
     }
 
