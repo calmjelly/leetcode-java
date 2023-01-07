@@ -11,7 +11,7 @@ public class T1658 {
 
     /**
      * 题目可以转为：从数组中移除一个最长的子数组，使得剩余数组的元素和等于x
-     *
+     * 滑动窗口、双指针
      * @param nums
      * @param x
      * @return
