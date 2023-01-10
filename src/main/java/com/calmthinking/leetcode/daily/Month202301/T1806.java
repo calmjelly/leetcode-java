@@ -1,4 +1,4 @@
-package com.calmthinking.leetcode.daily;
+package com.calmthinking.leetcode.daily.Month202301;
 
 /**
  * @Description: 1806. 还原排列的最少操作步数

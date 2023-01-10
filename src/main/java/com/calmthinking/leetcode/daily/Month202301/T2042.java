@@ -1,4 +1,4 @@
-package com.calmthinking.leetcode.daily;
+package com.calmthinking.leetcode.daily.Month202301;
 
 /**
  * @Description: 2042、检查句子中的数字是否递增

@@ -1,4 +1,4 @@
-package com.calmthinking.leetcode.daily;
+package com.calmthinking.leetcode.daily.Month202301;
 
 /**
  * @Description: 2351、第一个出现两次的字母

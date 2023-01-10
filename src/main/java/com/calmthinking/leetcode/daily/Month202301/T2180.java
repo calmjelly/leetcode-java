@@ -1,4 +1,4 @@
-package com.calmthinking.leetcode.daily;
+package com.calmthinking.leetcode.daily.Month202301;
 
 /**
  * @Description: 2180.统计各位数字之和为偶数的整数个数
